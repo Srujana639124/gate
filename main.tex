@@ -1,0 +1,245 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{multicol}
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2012-MA}
+\author{EE24BTECH11042- srujana}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=1]
+	\item The straight lines $L_1:$ x=0, $L_2:$ y=0; and $L_3:$x+y=1 are mapped by the transformation $w=z^{2}$ into the curves $C_1,C_2$ and $C_3$ respectively. The angle of intersection between the curves at $w=0$ is 
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 0
+    \item $\pi/4$
+    \item $\pi/2$
+    \item $\pi$
+\end{enumerate}
+\end{multicols}
+    \item In a tropical space, which of the following statements is NOT always true :
+    \begin{enumerate}
+        \item Union of any finite family of compact sets is compact.
+        \item Union of any family of closed sets is closed.
+        \item Union of any family of connected sets having a non empty intersection is connected.
+        \item Union of any family of dense subsets is dense.
+    \end{enumerate}
+\item Consider the following statements:
+$P:$ The family of subsets $\Biggl\{ A_N=\bigg(\frac{-1}{n},\frac{1}{n}\bigg),n=1,2,....\Biggr\}$
+satisfies the finite intersection property. \\
+
+$Q:$ On an infinite set X, a metric $d: X$ x $X\rightarrow R$ is  defined as $d\brak{x,y}=\begin{cases}
+    0, &  x = y \\
+    1, &  x \neq y\\
+\end{cases}$ . The metric space $\brak{X,d}$ is compact.\\
+
+$R: $ In a Frechet $\brak{T_1}$ topological space, every finite set is closed.\\
+
+$S: $ If $f:R\rightarrow X$ is continuous, where R is given the usual topology and $\brak{X,T}$ is a Hausdorff $\brak{T_2}$ space, then $f$ is one-one function.\\
+which of the above statements are correct$?$
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item P and R
+        \item P and S
+        \item R and S
+        \item Q and S
+    \end{enumerate}
+\end{multicols}
+\item Let H be Hilbert space and $s^\perp$ denote the orthogonal complement of a set S $\subseteq$ H. which of the following is INCORRECT$?$
+    \begin{enumerate}
+        \item $For S_1,S_2\subseteq H; S_1\subseteq S_2\implies S_1^\perp\subseteq S_2^\perp. $        \item $S \subseteq \brak{S^\perp}^\perp$
+        \item ${0}^\perp = H$
+        \item $S^\perp$ is always closed
+    \end{enumerate}
+\item Let H be a complex Hilbert space, $T:H\rightarrow H$ be a bounded linear operator and let $T^{*}$ denote the adjoint of T . Which of the following statements are always TRUE?\\
+$P: \forall x,y \in H,\langle Tx,Y \rangle = \langle x,T^*y \rangle   \hspace{1.2cm}  Q: \forall x,y \in H,\langle x,Ty \rangle = \langle T^*x,y \rangle$  \\
+$R: \forall x,y \in H,\langle x,Ty \rangle = \langle x,T^*y \rangle   \hspace{1.2cm}  S: \forall x,y \in H,\langle Tx,Ty \rangle = \langle T*x,T^*y \rangle$
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item P an Q
+        \item P and R
+        \item Q and S
+        \item P and S
+    \end{enumerate}
+\end{multicols}
+\item  Let X=\{a,b,c\} and let $\tau=\{\phi,\{a\},\{b\},\{a,b\},X\}$ be a topology defined on X . Then which of the following statements are TRUE$?$\\
+$P: \brak{X,\tau}$ is a Hausdroff space.\hspace{1.3cm}
+$Q: \brak{X,\tau}$ is a regular space.s\\
+$R: \brak{X,\tau}$ is a normal space.\hspace{1.6cm}
+$S: \brak{X,\tau}$ is a connected space.
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item P and Q
+        \item Q and R
+        \item R and S
+        \item P and S
+    \end{enumerate}
+\end{multicols}
+\item Consider the statements\\
+$P: $If X is a normed linear space and M $\subseteq$ X is a subspace, then the closure $\overline{M}$ is also a subspace of X.\\
+
+$Q: $If X is a banach space and $\sum X_n$ is an absolute convergent series in X, then $\sum X_n$ is convergent\\
+
+$R: Let M_1$ and $M_2$ be subspaces of an inner product space such that $M_1 \cap M_2$=\{0\}.Then $\forall m_1\in M_1 , m_2\in M_2; \|\mathbf{m_1+m_2}\|^2=\|\mathbf{m_1}\|^2+|\mathbf{m_2}\|^2.$\\
+
+$S: $Let $f: X\rightarrow Y$ be a linear transformation from the banach space X into the Branch space Y. If $f$ is continuous, then the graph of $f$ is always compact.\\
+
+The correct statements amongst the above are:
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item P and R only
+        \item Q and R only
+        \item P and Q only 
+        \item R and S only
+    \end{enumerate}
+\end{multicols}
+\item A continuous random variable X has the probability density function \\
+\[
+f(x)=\begin{cases}
+     \frac{3}{5} e^{\frac{-3x}{5}}, & x > 0 \\
+     0, & x \leq 0
+\end{cases}
+\]
+The probability density function Y=3X+2 is
+
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item 
+            \[
+           f(y)=\begin{cases}
+           \frac{1}{5} e^{\frac{-1\brak{y-2}}{5}}, & y > 2 \\
+            0, & y \leq 2
+           \end{cases}
+           \]
+           \item 
+            \[
+           f(y)=\begin{cases}
+           \frac{2}{5} e^{\frac{3\brak{y-2}}{5}}, & y > 2 \\
+            0, & y \leq 2
+           \end{cases}
+           \]
+           \item 
+            \[
+           f(y)=\begin{cases}
+           \frac{3}{5} e^{\frac{-2\brak{y-2}}{5}}, & y > 2 \\
+            0, & y \leq 2
+           \end{cases}
+           \]
+           \item 
+            \[
+           f(y)=\begin{cases}
+           \frac{3}{5} e^{\frac{-4\brak{y-2}}{5}}, & y > 2 \\
+            0, & x \leq 2
+           \end{cases}
+           \]
+        \end{enumerate}
+    \end{multicols}
+\item A simple random sample sample of size 10 from N\brak{\mu,\sigma^2} gives 98 \% confidence interval \brak{20.49,23.51}.Then the null hypothesis $H_O : \mu =20.5$ against $H_A: \mu\neq20.5$
+\begin{enumerate}
+    \item can be rejected at 2\%  level of significance
+    \item cannot be rejected at 5\% level of significance 
+    \item can be rejected at 10\% level of significance 
+    \item cannot be rejected at any level of significance 
+\end{enumerate}
+\item For the linear programming problem \\
+\hspace{2cm} Maximize \hspace{2cm} $Z=X_1+2X_2+3X_3-4X4$\\
+\hspace{2cm} Subject to \hspace{2.5cm} $2X_1+3_X2-X_3-X_4=15$
+
+\hspace{4.1cm} $6X_1+X_2+X_3-3X_4=21$
+
+\hspace{4.1cm} $8X_1+2X_2+3X_3-4X_4=30$
+
+\hspace{4.5cm} $X_1,X_2,X_3,X_4\geq0,$\\
+$X_1=4,X_2=3,X_3=0,X_4=2$ is
+\begin{enumerate}
+    \item an optimal solution
+    \item a degenerate basic feasible solution
+    \item a non-degenerate basic feasible solution
+    \item a non-basic feasible solution
+\end{enumerate}
+\item Which of the following statements is TRUE$?$
+\begin{enumerate}
+    \item A convex set cannot have infinite many extreme points.
+    \item A linear programming problem can have infinite many extreme points.
+    \item A linear programming problem can have exactly two different optimal solutions.
+    \item A linear programming problem can have a non-basic optimal solution.
+\end{enumerate}
+\item Let $\alpha=e^{2\pi i/5}$ and the matrix
+  \[
+M = \begin{bmatrix}
+1 & \alpha & \alpha^2 & \alpha^3 & \alpha^4 \\
+0 & \alpha & \alpha^2 & \alpha^3 & \alpha^4 \\
+0 & 0 & \alpha^2  & \alpha^3  & \alpha^4 \\
+0 & 0 & 0 & \alpha^3 & \alpha^4 \\
+0 & 0 & 0 & 0 & \alpha^4
+\end{bmatrix}
+\]
+Then the trace of the matrix $I+M+M^2$ is
+\begin{multicols}{4}
+    \begin{enumerate}
+        \item -5
+        \item 0
+        \item 3
+        \item 5
+    \end{enumerate}
+\end{multicols}
+\item Let Let \( V = \mathbb{C}^2 \) be the vector space over the field of complex numbers and B=$\{\brak{1,i},\brak{i,1}\}$ be a given ordered basis of V . Then for which of the following, $B^*=\{f_1,f_2\}$ is a dual basis of B over $\mathbb{C}?$
+\begin{enumerate}
+    \item $f_1\brak{z_1,z_2}=\frac{1}{2}\brak{z_1-iz_2},f_2\brak{z_1,z_2}=\frac{1}{2}\brak{z_1+iz_2}$
+    \item $f_1\brak{z_1,z_2}=\frac{1}{2}\brak{z_1+iz_2},f_2\brak{z_1,z_2}=\frac{1}{2}\brak{iz_1+z_2}$
+    \item $f_1\brak{z_1,z_2}=\frac{1}{2}\brak{z_1-iz_2},f_2\brak{z_1,z_2}=\frac{1}{2}\brak{-iz_1+z_2}$
+    \item $f_1\brak{z_1,z_2}=\frac{1}{2}\brak{z_1+iz_2},f_2\brak{z_1,z_2}=\frac{1}{2}\brak{-iz_1-z_2}$
+\end{enumerate}
+\end{enumerate}
+\end{document}
+
